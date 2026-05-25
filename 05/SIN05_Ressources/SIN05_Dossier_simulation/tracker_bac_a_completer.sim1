@@ -1,0 +1,79 @@
+<circuit version="1.1.0-SR1" rev="2019" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="30000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-7" mainComp="false" Show_id="true" Show_Val="false" Pos="12,-164" rotation="0" hflip="1" vflip="1" label="Uno-7" idLabPos="10.2056,-7.52648" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="prog_tracker_a_completer_V1.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Servo" CircId="Servo-43" mainComp="false" Show_id="false" Show_Val="false" Pos="-84,-16" rotation="90" hflip="1" vflip="1" label="Servo-43" idLabPos="48.9238,21.7824" labelrot="-90" valLabPos="-16,20" valLabRot="0" Speed="1.2 _s/60º" MinPulse="1000 _µs" MaxPulse="2000 _µs" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" />
+
+<item itemtype="Resistor" CircId="Resistor-101" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="464,-68" rotation="90" hflip="1" vflip="1" label="Resistor-101" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 kΩ" />
+
+<item itemtype="Switch" CircId="Switch-113" mainComp="false" Show_id="false" Show_Val="false" Pos="464,16" rotation="90" hflip="-1" vflip="-1" label="Switch-113" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="TextComponent" CircId="TextComponent-116" mainComp="false" Show_id="false" Show_Val="false" Pos="32,-252" rotation="0" hflip="1" vflip="1" label="TextComponent-116" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#fff2be" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="13 _px" Fixed_Width="false" Text="Simulation &#x22; Tracker Solaire &#x22;" />
+
+<item itemtype="TextComponent" CircId="TextComponent-120" mainComp="false" Show_id="false" Show_Val="false" Pos="-128,56" rotation="0" hflip="1" vflip="1" label="TextComponent-120" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="1 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="8 _px" Fixed_Width="false" Text="Servomoteur rotation&#xa;&#x22; axe azimut &#x22;" />
+
+<item itemtype="TextComponent" CircId="TextComponent-117" mainComp="false" Show_id="false" Show_Val="false" Pos="424,88" rotation="0" hflip="1" vflip="1" label="TextComponent-117" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="1 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="8 _px" Fixed_Width="false" Text="fin de course&#xa;retour position nuit" />
+
+<item itemtype="Image" CircId="Image-151" mainComp="false" Show_id="false" Show_Val="false" Pos="460,160" rotation="0" hflip="1" vflip="1" label="Image-151" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="50 _px" V_size="70 _px" Border="0 _px" Z_Value="0" Color="#a0a0a4" Opacity="1" Image_File="images/fin_course.png" />
+
+<item itemtype="Image" CircId="Image-153" mainComp="false" Show_id="false" Show_Val="false" Pos="-88,160" rotation="0" hflip="1" vflip="1" label="Image-153" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="95 _px" V_size="127 _px" Border="0 _px" Z_Value="-6" Color="#a0a0a4" Opacity="1" Image_File="images/Copilot_20250702_183332.png" />
+
+<item itemtype="Probe" CircId="Probe-176" mainComp="false" Show_id="false" Show_Val="true" Pos="524,-196" rotation="-45" hflip="1" vflip="1" label="Probe-176" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Rectangle" CircId="Rectangle-154" mainComp="false" Show_id="false" Show_Val="false" Pos="296,64" rotation="0" hflip="1" vflip="1" label="Rectangle-154" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="214 _px" V_size="141 _px" Border="0 _px" Z_Value="-1" Color="#0eb6d8" Opacity="1" />
+
+<item itemtype="TextComponent" CircId="TextComponent-150" mainComp="false" Show_id="false" Show_Val="false" Pos="312,44" rotation="0" hflip="1" vflip="1" label="TextComponent-150" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="7 _px" Fixed_Width="true" Text="Gnd" />
+
+<item itemtype="TextComponent" CircId="TextComponent-148" mainComp="false" Show_id="false" Show_Val="false" Pos="196,44" rotation="0" hflip="1" vflip="1" label="TextComponent-148" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="7 _px" Fixed_Width="true" Text="Gnd" />
+
+<item itemtype="TextComponent" CircId="TextComponent-138" mainComp="false" Show_id="false" Show_Val="false" Pos="252,44" rotation="0" hflip="1" vflip="1" label="TextComponent-138" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="7 _px" Fixed_Width="true" Text="Vcc" />
+
+<item itemtype="TextComponent" CircId="TextComponent-137" mainComp="false" Show_id="false" Show_Val="false" Pos="376,44" rotation="0" hflip="1" vflip="1" label="TextComponent-137" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="7 _px" Fixed_Width="true" Text="Vcc" />
+
+<item itemtype="TextComponent" CircId="TextComponent-136" mainComp="false" Show_id="false" Show_Val="false" Pos="352,36" rotation="0" hflip="1" vflip="1" label="TextComponent-136" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="7 _px" Fixed_Width="true" Text="OUT" />
+
+<item itemtype="TextComponent" CircId="TextComponent-135" mainComp="false" Show_id="false" Show_Val="false" Pos="236,36" rotation="0" hflip="1" vflip="1" label="TextComponent-135" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 _px" Border="0 _px" Color="#ffffdc" Opacity="0" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="7 _px" Fixed_Width="true" Text="OUT" />
+
+<item itemtype="TextComponent" CircId="TextComponent-119" mainComp="false" Show_id="false" Show_Val="false" Pos="316,92" rotation="0" hflip="1" vflip="1" label="TextComponent-119" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="1 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="8 _px" Fixed_Width="false" Text="simulation capteur&#xa;de lumière droit&#xa;CaptD" />
+
+<item itemtype="TextComponent" CircId="TextComponent-118" mainComp="false" Show_id="false" Show_Val="false" Pos="196,92" rotation="0" hflip="1" vflip="1" label="TextComponent-118" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="1 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="8 _px" Fixed_Width="false" Text="simulation capteur&#xa;de lumière gauche&#xa;CaptG" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-106" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="352,60" rotation="0" hflip="1" vflip="-1" label="Potentiometer-106" idLabPos="-16,-40" labelrot="0" valLabPos="-7.99805,-27.1134" valLabRot="0" Resistance="1 kΩ" Value_Ohm="514 Ω" Slider="true" Scale="2" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-105" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="232,60" rotation="0" hflip="1" vflip="-1" label="Potentiometer-105" idLabPos="-16,-40" labelrot="0" valLabPos="-10.2979,-29.1992" valLabRot="0" Resistance="1 kΩ" Value_Ohm="562 Ω" Slider="true" Scale="2" />
+
+<item itemtype="Image" CircId="Image-195" mainComp="false" Show_id="false" Show_Val="false" Pos="232,180" rotation="0" hflip="1" vflip="1" label="Image-195" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="89 _px" V_size="72 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="1" Image_File="images/capt_lum.png" />
+
+<item itemtype="Image" CircId="Image-196" mainComp="false" Show_id="false" Show_Val="false" Pos="352,184" rotation="0" hflip="1" vflip="1" label="Image-196" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" H_size="89 _px" V_size="72 _px" Border="0 _px" Z_Value="-1" Color="#a0a0a4" Opacity="1" Image_File="images/capt_lum.png" />
+
+<item itemtype="Node" CircId="Node-125" mainComp="false" Pos="464,-36" />
+
+<item itemtype="Node" CircId="Node-177" mainComp="false" Pos="484,-180" />
+
+<item itemtype="Node" CircId="Node-194" mainComp="false" Pos="220,-156" />
+
+<item itemtype="Connector" uid="Connector-149" startpinid="Servo-43-in2" endpinid="Uno-7-5" pointList="-100,-64,-100,-108,20,-108" />
+
+<item itemtype="Connector" uid="Connector-199" startpinid="Servo-43-in1" endpinid="Uno-7-GND2" pointList="-84,-64,-84,-92,-20,-92,-20,-28,20,-28" />
+
+<item itemtype="Connector" uid="Connector-301" startpinid="Resistor-101-rPin" endpinid="Node-125-0" pointList="464,-52,464,-36" />
+
+<item itemtype="Connector" uid="Connector-411" startpinid="Probe-176-inpin" endpinid="Node-177-1" pointList="508,-180,484,-180" />
+
+<item itemtype="Connector" uid="Connector-412" startpinid="Uno-7-2" endpinid="Node-177-0" pointList="20,-132,-4,-132,-4,-208,484,-208,484,-180" />
+
+<item itemtype="Connector" uid="Connector-413" startpinid="Node-177-2" endpinid="Node-125-1" pointList="484,-180,484,-36,464,-36" />
+
+<item itemtype="Connector" uid="Connector-302" startpinid="Node-125-2" endpinid="Switch-113-switch0pinN" pointList="464,-36,464,0" />
+
+<item itemtype="Connector" uid="Connector-497" startpinid="Uno-7-GND0" endpinid="Switch-113-pinP0" pointList="164,-84,424,-84,424,48,464,48,464,32" />
+
+<item itemtype="Connector" uid="Connector-510" startpinid="Servo-43-in0" endpinid="Node-194-1" pointList="-68,-64,-68,-188,220,-188,220,-156" />
+
+<item itemtype="Connector" uid="Connector-511" startpinid="Resistor-101-lPin" endpinid="Node-194-0" pointList="464,-84,464,-156,220,-156" />
+
+<item itemtype="Connector" uid="Connector-512" startpinid="Node-194-2" endpinid="Uno-7-5V0" pointList="220,-156,220,-68,164,-68" />
+
+</circuit>

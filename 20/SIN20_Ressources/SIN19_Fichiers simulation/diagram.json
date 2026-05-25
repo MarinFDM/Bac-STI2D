@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "author": "Createur Anonyme",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 298.2, "left": -346.2, "attrs": {} },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -184.4,
+      "left": 67.5,
+      "attrs": {
+        "columns": "3",
+        "keys": [ "1", "2", "3", "", "4", "5", "6", "", "7", "8", "9", "", "C", "0", "V" ]
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 81.6,
+      "left": -106.15,
+      "rotate": 90,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 81.6,
+      "left": -77.35,
+      "rotate": 90,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 81.6,
+      "left": -48.55,
+      "rotate": 90,
+      "attrs": { "value": "10000" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd2",
+      "top": 323.2,
+      "left": 5.6,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": 55.6, "left": -278.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "keypad1:R1", "uno:9", "green", [ "v19.2", "h-326.4", "v134.4" ] ],
+    [ "keypad1:C1", "uno:5", "green", [ "v96", "h-320.7" ] ],
+    [ "uno:5V", "r1:1", "red", [ "v38.3", "h-178.6", "v-518.4", "h288" ] ],
+    [ "keypad1:C2", "uno:4", "green", [ "v115.2", "h-320.7" ] ],
+    [ "keypad1:C3", "uno:3", "green", [ "v134.4", "h-320.7" ] ],
+    [ "keypad1:C4", "uno:2", "green", [ "v144", "h-494" ] ],
+    [ "uno:5V", "r2:1", "red", [ "v38.3", "h-178.6", "v-518.4", "h316.8" ] ],
+    [ "uno:5V", "r3:1", "red", [ "v38.3", "h-178.6", "v-518.2", "h345.6" ] ],
+    [ "keypad1:R2", "uno:8", "green", [ "v28.8", "h-326.7" ] ],
+    [ "keypad1:R3", "uno:7", "green", [ "v38.4", "h-320.45" ] ],
+    [ "keypad1:R4", "uno:6", "green", [ "v48", "h-320.45" ] ],
+    [ "lcd2:GND", "uno:GND.2", "black", [ "h-57.6", "v182.4", "h-128.7" ] ],
+    [ "lcd2:VCC", "uno:5V", "red", [ "h-67.2", "v163.3", "h-128.6" ] ],
+    [ "lcd2:SCL", "uno:A5", "green", [ "h-38.4", "v125.1", "h-61.9" ] ],
+    [ "lcd2:SDA", "uno:A4", "blue", [ "h-28.8", "v144.2", "h-81" ] ],
+    [ "servo1:PWM", "uno:10", "green", [ "h-19.2", "v153.8", "h104.9" ] ],
+    [ "servo1:V+", "uno:5V", "red", [ "h-86.4", "v412.9", "h178.6" ] ],
+    [ "servo1:GND", "uno:GND.2", "black", [ "h-96", "v432", "h197.7" ] ]
+  ],
+  "dependencies": {}
+}

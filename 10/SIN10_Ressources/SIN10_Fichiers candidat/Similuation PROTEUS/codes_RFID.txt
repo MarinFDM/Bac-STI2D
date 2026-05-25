@@ -1,0 +1,8 @@
+
+A remplacer par les codes des TAGS fournis par l'enseignant
+
+Puis faire un copier coller du code dans le terminal en mode simulation (PROTEUS)
+voir dossier ressources
+
+Code correct   f4 3a 8b c3  ( à remplacer)
+Code faux      0c 28 8c c3   ( à remplacer)

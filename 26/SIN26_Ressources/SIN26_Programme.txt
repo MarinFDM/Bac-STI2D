@@ -1,0 +1,43 @@
+#include "SparkFun_Weather_Meter_Kit_Arduino_Library.h"
+#include <SoftwareSerial.h>
+
+// Définition des différentes broches de l'arduino utilisés
+ int windDirectionPin = A0;
+ int windSpeedPin = 3;
+ int rainfallPin = 2;
+ int Rx = 4;
+ int Tx = 5;
+// Création d'une instance du Kit météo
+SFEWeatherMeterKit weatherMeterKit(windDirectionPin, windSpeedPin, rainfallPin);
+// Création d'une instance de la liaison série
+SoftwareSerial liaison(Rx, Tx); // RX, TX
+
+void setup()
+{
+    Serial.begin(115200); // Initialisation de la liaison série USB
+    weatherMeterKit.begin();  // Démarrage du kit de mesure de la météo (Sparkfun)
+    liaison.begin(9600);  // Initialisation de la liaison série UART
+}
+
+void loop()
+{
+    float Vitesse_vent=weatherMeterKit.getWindSpeed();
+    float Direction_vent=weatherMeterKit.getWindDirection();
+    float Quantite_pluie=weatherMeterKit.getTotalRainfall();
+    // Début : Partie à MODIFIER -------------------------------------------
+    liaison.print(F("Vitesse du vent: ")); 
+    liaison.print(Vitesse_vent,1);
+    liaison.println(F(" km/h"));
+    liaison.print(F("Direction du vent: "));
+    liaison.print(Direction_vent,1);
+    liaison.println(F(" degre par rapport au Nord"));
+    liaison.print(F("Quantité de pluie depuis 24h : "));
+    liaison.print(Quantite_pluie,1);
+    liaison.println(F(" mm"));
+    //fonctions à rajouter :
+           //Convertir les trois variables flottantes en chaînes de caractères
+           //Construction de la trame ASCII
+           //Transmission de la trame
+    delay(300000); // Rafraichissement de l'affichage toutes les 5 minutes
+    // Fin : Partie à MODIFIER -------------------------------------------
+}

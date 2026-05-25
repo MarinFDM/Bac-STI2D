@@ -1,0 +1,30 @@
+#include <Adafruit_LiquidCrystal.h>
+
+const int capteurPin = __;     // Pin analogique du capteur
+
+Adafruit_LiquidCrystal lcd(0); // Initialisation LCD sur bus I2C 
+
+void setup() {
+  Serial.begin(9600);
+  lcd.begin(16, 2);             // Écran 16x2
+  lcd.print("Temperature :");   // Message d'accueil
+}
+
+void loop() {
+
+  int valeurAnalogique = analogRead(____); // Lire la valeur analogique (0 à 1023)
+  
+  // Convertir en tension (0 à 5 V)
+  float voltage = _________________________;
+  
+  // Convertir la tension en température en °C
+  float temperatureC = (voltage-0.5) * 100;
+  
+  
+  
+  // Affichage sur l'écran LCD
+  lcd.setCursor(0, 1);                // Ligne 2, colonne 1
+  lcd.print("C: ");
+  lcd.print(temperatureC, 1);              // Affichage avec 1 chiffre après la virgule
+  delay(____);                        // Attendre 1 seconde
+}

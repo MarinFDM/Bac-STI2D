@@ -1,0 +1,16 @@
+// Mesure Photoresistence pour calibrer
+
+int valPhoto = 0; //variable de la valeur lue de la photorésistance
+
+void setup()
+{
+  Serial.begin(9600); //démarage protocole série
+  pinMode(A0, INPUT);// Prise A0 en entrée
+}
+
+void loop()
+{
+	valPhoto = analogRead(A0);// On range la valeur lue dans valPhoto
+	Serial.println(valPhoto);//On envoie sur le moniteur série val Photo
+	delay(100);//on attend 100ms pour que l'affichage soit lisible
+}

@@ -1,0 +1,22 @@
+// Allumage d'une DEL par détection de mouvement et lumière faible
+
+
+void setup()
+{
+  pinMode(9, OUTPUT);//sortie pour la prise 9
+  pinMode(2, INPUT);//entrée pour la prise 2
+}
+
+void loop()
+{
+  
+  if (digitalRead(2) == HIGH)//test d'un mouvement
+  {
+  	digitalWrite(9, HIGH); //allumage de la DEL
+    delay(100); //modifier la valeur pour obtenir 30 secondes
+  }
+  else
+  {
+  	digitalWrite(9, LOW);// Eteindre LED
+  }
+}
